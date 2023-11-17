@@ -8,10 +8,10 @@ const Hero = () => {
   return <Wrapper className='section-center'>
     <article className='content'>
       <h1>
-        design your <br/>
-        comfort zone
+        Portfolio<br/>
+        E-Shop
       </h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, tempora.</p>
+      <p>Welcome on my test website. This is my trial custom <span>e-shop</span>. In this side I use <span>React</span>, front-end framework of JavaScript language.</p>
       <Link to="/products" className="btn hero-btn">
         shop now
       </Link>
@@ -37,6 +37,9 @@ const Wrapper = styled.section`
     margin-bottom: 2rem;
     color: var(--clr-grey-5);
     font-size: 1rem;
+  }
+  span{
+    font-weight:600;
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
