@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import heroBcg from '../assets/hero-bcg.jpeg'
 import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import { Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   return <Wrapper className='section-center'>
+    <Slide>
     <article className='content'>
       <h1>
         Portfolio<br/>
@@ -16,6 +18,7 @@ const Hero = () => {
         shop now
       </Link>
     </article>
+    </Slide>
     <article className='img-container'>
       <img src={heroBcg} alt="nice table" className='main-img'/>
       <img src={heroBcg2} alt="person working" className='accent-img'/>

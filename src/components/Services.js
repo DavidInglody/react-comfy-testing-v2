@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { services } from '../utils/constants'
+import { Fade } from "react-awesome-reveal";
 
 const Services = () => {
   return <Wrapper>
+    
     <div className="section-center">
       <article className="header">
         <h3>custom furniture <br/>
@@ -11,6 +13,7 @@ const Services = () => {
         </h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque dicta at sint delectus numquam ipsa eaque reiciendis tenetur nesciunt?</p>
       </article>
+        <Fade cascade>
       <div className="services-center">
         {services.map((service)=>{
           const {id,icon,title,text}= service
@@ -21,6 +24,7 @@ const Services = () => {
           </article>
         })}
       </div>
+      </Fade>
     </div>
   </Wrapper>
 }
